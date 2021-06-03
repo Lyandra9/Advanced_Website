@@ -1,0 +1,55 @@
+.contact {
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  font-size: 40px;
+}
+
+.contact-text h3 {
+  font-weight: 300;
+}
+
+.contact-text span {
+  color: crimson;
+  padding-left: 20px;
+}
+
+.contact-blocks {
+  display: flex;
+  flex-direction: row;
+}
+
+.block {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  height: 150px;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  padding: 30px;
+}
+
+.block:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.icon-div {
+  padding-right: 15px;
+}
+
+.icon-div img {
+  width: 70px;
+}
+
+.block-text ul {
+  list-style: none;
+}
+
+.block-text h3 {
+  padding-bottom: 7px;
+}

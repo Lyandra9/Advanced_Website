@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url("/media/hero-bg 1.png");
+  height: 750px;
+}
+
+.menu-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-nav ul li:hover a {
+  color: crimson;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: fixed;
+  padding: 10px 150px;
+  width: 100%;
+  z-index: 40;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav ul li {
+  padding: 15px;
+}
+
+.nav ul li:hover {
+  color: crimson;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo h1 {
+  padding-right: 15px;
+}
+
+.logo h1::first-letter {
+  color: crimson;
+}
+
+.intro {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 750px;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 350px;
+  padding-top: 140px;
+  align-items: top;
+  justify-content: left;
+  font-size: 40px;
+  color: white;
+  width: 850px;
+}
+
+.intro h2 {
+  position: relative;
+}
+
+.animated-text {
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.animated-text span {
+  background-color: crimson;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  animation: animated-name 1s ease forwards;
+}
+
+@keyframes animated-name {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: crimson;
+  }
+}
+
+.animated {
+  width: 250px;
+}
+
+.intro-text button {
+  margin-top: 50px;
+  width: 300px;
+  border: 3px solid crimson;
+  border-radius: 5px;
+  height: 50px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.intro-text button:hover {
+  animation: intro_button 0.3s ease-in;
+  background-color: crimson;
+  color: white;
+}
+
+@keyframes intro_button {
+  0% {
+    background-color: transparent;
+    color: black;
+  }
+
+  100% {
+    background-color: crimson;
+    color: white;
+  }
+}
